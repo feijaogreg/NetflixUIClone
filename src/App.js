@@ -9,15 +9,15 @@ export default () => {
   useEffect(() => {
     const loadAll = async () => {
       let list = await Tmdb.getHomeList();
-      setMovirList(list);
+      setMovieList(list);
     }
 
     loadAll();
   }, []);
 
   return(
-    <div>
-      Hello World!
+    <div className="page">
+      
     </div>
   );
 }
