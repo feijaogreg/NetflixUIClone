@@ -1,7 +1,7 @@
-.MovieRow {
+.movieRow {
     margin-bottom: 30px;
 }
-.MovieRow h2 {
+.movieRow h2 {
     margin: 0px 0px 0px 30px;
 }
 .movieRow--listarea {
@@ -9,7 +9,7 @@
     padding-left: 30px;
 }
 .movieRow--list {
-    width: 99999px;
+    transition: all ease 0.5s;
 }
 .movieRow--item {
     display: inline-block;
@@ -34,10 +34,16 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.4s;
 }
 .movieRow--left {
     left: 0;
 }
 .movieRow--right {
     right: 0;
+}
+.movieRow:hover .movieRow--left, .movieRow:hover .movieRow--right {
+    opacity: 1
 }
